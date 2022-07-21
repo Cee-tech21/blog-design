@@ -24,8 +24,15 @@ for(let i = 1; i < allPosts.length; i++){
     featuredNews.innerHTML += `<article class="card">
                                 <img src="${allPosts[i].jetpack_featured_media_url}" 
                                     class="featured__image" alt="article image">
-                                ${allPosts[i].excerpt.rendered}
-    
+                                <div class="pt-half pb-half">
+                                    ${allPosts[i].excerpt.rendered}
+                                </div> 
+
+                                <div> <a href="${allPosts[i].guid.rendered}"
+                                            class="fw-bold-one">
+                                        Read full >> 
+                                    </a>
+                                </div>
                             </article>`
 }
 

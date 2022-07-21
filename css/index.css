@@ -28,6 +28,17 @@ section:nth-of-type(1){
     padding: 0.5em;
 }
 
+/* Utilities */
+.fw-bold-one {
+    font-weight: 800;
+}
+.pt-half {
+    padding-top: 0.5em;
+}
+.pb-half {
+    padding-bottom: 0.5em;
+}
+
 
 /* media queries */
 @media (min-width: 1020px){
