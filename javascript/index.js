@@ -14,6 +14,12 @@ console.log(allPosts[0].content.rendered)
 let theHeadline = getElement(".headline")
 let headlineImg = getElement("#headline-image")
 theHeadline.innerHTML = allPosts[0].excerpt.rendered
+theHeadline.innerHTML  += `<div class="pt-half"> 
+                                <a href="${allPosts[0].guid.rendered}"
+                                            class="fw-bold-one">
+                                        Read full >> 
+                                </a>
+                            </div>`
 headlineImg.src = allPosts[0].jetpack_featured_media_url
 
 // Work with remaining articles
