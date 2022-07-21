@@ -15,6 +15,7 @@ section:nth-of-type(1){
 .headline__image {
     width: 40em;
     height: 15em;
+    margin-right: 0.4em;
 }
 
 .featured__image{
@@ -53,6 +54,10 @@ section:nth-of-type(1){
         gap: 5px;
     }
     .headline__image {
-    display: none;
-}
+        display: none;
+    }
+    .featured__image{
+        width: 24em;
+        height: 15em;
+    }
 }

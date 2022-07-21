@@ -9,12 +9,14 @@ console.log(allPosts[0].content.rendered)
 
 
 // Target DOM elements
-
-
 // Populate DOM elements with API data
-let theHeadline = getElement(".headline")
-theHeadline.innerHTML = allPosts[0].excerpt.rendered
 
+let theHeadline = getElement(".headline")
+let headlineImg = getElement("#headline-image")
+theHeadline.innerHTML = allPosts[0].excerpt.rendered
+headlineImg.src = allPosts[0].jetpack_featured_media_url
+
+// Work with remaining articles
 let featuredNews = getElement("#featured-News")
 
 for(let i = 1; i < allPosts.length; i++){
