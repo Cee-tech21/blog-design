@@ -12,7 +12,12 @@ section:nth-of-type(1){
     display: flex;
     margin-bottom: 1em;
 }
-.headline__image, .featured__image{
+.headline__image {
+    width: 40em;
+    height: 15em;
+}
+
+.featured__image{
     width: 20em;
     height: 15em;
 }
@@ -47,4 +52,7 @@ section:nth-of-type(1){
         grid-template-columns: repeat(1, 1fr);
         gap: 5px;
     }
+    .headline__image {
+    display: none;
+}
 }
