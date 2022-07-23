@@ -21,7 +21,7 @@ section:nth-of-type(1){
 .headline__image {
     width: 100em;
     height: 15em;
-    margin-right: 0.4em;
+    margin-right: 0.8em;
 }
 .card{
     border: solid 3px lightgrey;
@@ -66,6 +66,12 @@ section:nth-of-type(1){
         width: 95%;
         height: 15em;
     }
+    .headline p {
+        line-height: 24px;
+        max-height: 72px;
+        overflow: hidden;
+        
+    }
 }
 @media (max-width: 680px){
     .row{
@@ -75,6 +81,12 @@ section:nth-of-type(1){
     }
     .headline__image {
         display: none;
+    }
+    .headline p {
+        line-height: 24px;
+        max-height: 96px;
+        overflow: hidden;
+        
     }
     
 }

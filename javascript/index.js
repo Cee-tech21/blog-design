@@ -24,7 +24,10 @@ async function callApiCreateArticles(){
 
 // headline article
 async function createHeadlineNews(freshData){
-    theHeadline.innerHTML = freshData[0].excerpt.rendered
+    theHeadline.innerHTML = `<h3 class="pb-half">
+                             ${freshData[0].title.rendered} 
+                             <h3/>`
+    theHeadline.innerHTML += freshData[0].excerpt.rendered
     theHeadline.innerHTML += `<div class="pt-half"> 
                                 <a href="${freshData[0].guid.rendered}"
                                             class="fw-bold-one">
