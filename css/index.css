@@ -27,17 +27,32 @@ section:nth-of-type(1){
     border: solid 3px lightgrey;
     padding: 1.5em;
     border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured-news__excerpt{
+    /* flex-grow: 1.2; */
 }
 
 /* Utilities */
 .fw-bold-one {
     font-weight: 800;
 }
+.fw-bold-thin {
+    font-weight: 700;
+}
 .pt-half {
     padding-top: 0.5em;
 }
 .pb-half {
     padding-bottom: 0.5em;
+}
+.flex-grow-half{
+    flex-grow: 0.5;
+}
+.flex-grow-1 {
+    flex-grow: 1;
 }
 
 

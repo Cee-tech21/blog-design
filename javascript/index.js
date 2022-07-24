@@ -24,9 +24,9 @@ async function callApiCreateArticles(){
 
 // headline article
 async function createHeadlineNews(freshData){
-    theHeadline.innerHTML = `<h3 class="pb-half">
+    theHeadline.innerHTML = `<h2 class="pb-half">
                              ${freshData[0].title.rendered} 
-                             <h3/>`
+                             </h2>`
     theHeadline.innerHTML += freshData[0].excerpt.rendered
     theHeadline.innerHTML += `<div class="pt-half"> 
                                 <a href="${freshData[0].guid.rendered}"
@@ -44,12 +44,17 @@ async function createFeaturedNews(freshData){
     featuredNews.innerHTML += `<article class="card">
                                 <img src="${freshData[i].jetpack_featured_media_url}" 
                                     class="featured__image" alt="article image">
-                                <div class="pt-half pb-half">
+                                <p class="pt-half fw-bold-thin 
+                                    flex-grow-half">
+                                    ${freshData[i].title.rendered} 
+                                </p>
+                                <div class="pt-half pb-half 
+                                    flex-grow-1">
                                     ${freshData[i].excerpt.rendered}
                                 </div> 
 
                                 <div> <a href="${freshData[i].guid.rendered}"
-                                            class="fw-bold-one">
+                                            class="fw-bold-thin">
                                         Read full >> 
                                     </a>
                                 </div>
