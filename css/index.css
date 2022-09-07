@@ -20,7 +20,7 @@ section:nth-of-type(1){
     background-color: beige;
 }
 .headline__image {
-    width: 50%;
+    width: 250%;
     height: 15em;
     margin-right: 0.8em;
 }
