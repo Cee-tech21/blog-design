@@ -92,6 +92,9 @@ section:nth-of-type(1){
         overflow: hidden;
         
     }
+    .headline__image {
+        width: 20em;
+    }
 }
 @media (max-width: 680px){
     .row{
