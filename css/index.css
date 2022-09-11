@@ -22,7 +22,7 @@ section:nth-of-type(1){
 .headline__image {
     width: 250%;
     height: 15em;
-    margin-right: 0.8em;
+    margin-right: 1.6em;
 }
 .card{
     outline: solid 1.5px lightgrey;
